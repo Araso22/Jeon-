@@ -23,8 +23,8 @@ const heartLock = document.getElementById('heartLock');
   heartLock.addEventListener('drop', (e) => {
     e.preventDefault();
     if (isDragging) {
-      const answer = prompt("Who's your favorite person?");
-      const correctPassword = "nella"; // Change this to your secret word
+      const answer = prompt("Who's Jeyel favorite person?");
+      const correctPassword = "Ivanna"; // Change this to your secret word
       if(answer && answer.toLowerCase() === correctPassword) {
         alert("Password correct! ");
         revealButton.style.display = "inline-block";
@@ -44,4 +44,5 @@ const heartLock = document.getElementById('heartLock');
 
   window.addEventListener('click', (e) => {
     if(e.target === modal) modal.style.display = "none";
+
   });
